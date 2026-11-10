@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaos Keyboard 🌀</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="chaos-overlay" id="chaosOverlay"></div>
+
+  <main class="app-container">
+    <header class="app-header">
+      <div class="title-wrap">
+        <h1 class="glitch-title" data-text="CHAOS KEYBOARD">CHAOS KEYBOARD</h1>
+        <p class="subtitle">Every keystroke unravels order. Type at your own risk.</p>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-badge">
+          <span class="stat-label">Chaos Level</span>
+          <span class="stat-value" id="chaosCount">0</span>
+        </div>
+        <div class="stat-badge">
+          <span class="stat-label">Last Wave</span>
+          <span class="stat-value synth-type" id="lastSynth">Ready</span>
+        </div>
+        <div class="stat-badge">
+          <span class="stat-label">Entropy</span>
+          <span class="stat-value" id="entropyFreq">-- Hz</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Typing Display Output Area -->
+    <section class="display-container">
+      <div class="display-header">
+        <span class="display-label">Typed Manifest</span>
+        <button id="clearBtn" class="action-btn" title="Clear text">Clear</button>
+      </div>
+      <div class="text-display" id="textDisplay" tabindex="0" aria-label="Typed text stream">
+        <span class="cursor"></span>
+      </div>
+    </section>
+
+    <!-- Interactive Chaos Keyboard Container -->
+    <section class="keyboard-wrapper">
+      <div class="keyboard" id="keyboard">
+        <!-- Key elements generated dynamically or structured via JS -->
+      </div>
+    </section>
+
+    <footer class="app-footer">
+      <p>💡 Click any key or use your physical keyboard. Headphones recommended for maximum sonic chaos!</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
